@@ -56,4 +56,4 @@ Die Anwendung bietet eine einfache Benutzerverwaltung, Dashboard-Ansichten und i
 
 ## Lizenz
 
-Dieses Projekt steht unter der MIT-Lizenz.
+Dieses Projekt steht unter der [MIT-Lizenz](LICENSE).

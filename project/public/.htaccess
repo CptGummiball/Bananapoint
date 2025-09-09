@@ -1,0 +1,30 @@
+<IfModule mod_headers.c>
+  # Für ALLE Antworten (auch 301/404/5xx) – niemals speichern
+  Header always set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+  Header always set Pragma "no-cache"
+  Header always set Expires "0"
+  # Für (de)komprimierte Varianten, damit Proxies nichts falsches teilen
+  Header merge Vary "Accept-Encoding"
+</IfModule>
+
+# Falls aktiv, Expires-Mechanik deaktivieren
+<IfModule mod_expires.c>
+  ExpiresActive Off
+</IfModule>
+
+# (Optional) ETag abschalten – verhindert revalidierte 304
+# Wenn du wirklich JEDES Mal 200 willst:
+# FileETag None
+# <IfModule mod_headers.c>
+#   Header unset ETag
+# </IfModule>
+
+# Deine bestehenden Rewrite-Regeln (angepasst)
+Options -MultiViews
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+  RewriteRule ^ index.php [L,QSA]
+</IfModule>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bananapoint – Bald verfügbar</title>
+  <meta name="description" content="Bananapoint – Dienstpläne für die besten der besten.">
+  <meta name="theme-color" content="#0ea5e9">
+  <meta property="og:title" content="Bananapoint – Bald verfügbar">
+  <meta property="og:description" content="Bananapoint – Dienstpläne für die besten der besten.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/icon-512.png">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="preload" as="image" href="logo-512.png">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Fallback in case styles.css fails to load */
+    body{margin:0;background:#0b1020;color:#e6e9ee;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif}
+  </style>
+</head>
+<body>
+  <div class="bg">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+  </div>
+
+  <main class="wrap">
+    <header class="nav">
+      <div class="brand">
+        <img src="logo-512.png" alt="Bananapoint Logo" width="40" height="40" decoding="async">
+        <span>Bananapoint</span>
+      </div>
+      <div class="right">
+        <a class="link" href="mailto:hello@bananapoint.example">Kontakt</a>
+      </div>
+    </header>
+
+    <section class="hero card">
+      <img class="logo" src="logo-512.png" alt="Bananapoint Logo" width="128" height="128" decoding="async">
+      <h1>Bananapoint</h1>
+      <p class="tagline">Die schlanke, sichere Dienstplan-Lösung.<br> Bald offiziell verfügbar.</p>
+
+
+      <div class="meta">
+        <div class="chip">Responsiv</div>
+        <div class="chip">Sicher</div>
+        <div class="chip">Lokal hostbar</div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="feature card">
+        <h3>Einfach</h3>
+        <p>Schlanke Bedienung, klare Ansichten – ohne Schnickschnack.</p>
+      </div>
+      <div class="feature card">
+        <h3>Sicher</h3>
+        <p>Moderne Sicherheit: Hashing, CSRF-Schutz, Rollen & Rechte.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="left">
+        <small>&copy; <span id="year"></span> Bananapoint</small>
+      </div>
+      <div class="right">
+        <a class="link" href="mailto:info@bananapoint.de">info@bananapoint.de</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

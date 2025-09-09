@@ -1,0 +1,41 @@
+/* styles.css — Bananapoint Landing */
+:root{
+  --bg:#0b1020;
+  --panel:#101a2f;
+  --text:#e6e9ee;
+  --muted:#9aa4b2;
+  --primary:#0ea5e9;
+  --border:#23314f;
+  --shadow:0 10px 40px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:radial-gradient(1200px 800px at 70% 10%, rgba(14,165,233,.15), transparent 60%), var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif}
+.wrap{max-width:1100px;margin:0 auto;padding:20px}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:8px 6px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.2px}
+.link{color:var(--muted);text-decoration:none}
+.link:hover{color:var(--text)}
+.hero{margin:40px auto 20px;max-width:760px;text-align:center;padding:28px 22px}
+.card{background:rgba(16,26,47,.75);backdrop-filter:blur(8px);border:1px solid var(--border);border-radius:18px;box-shadow:var(--shadow)}
+.logo{border-radius:24px;box-shadow:0 8px 30px rgba(14,165,233,.25);}
+h1{font-size:40px;margin:18px 0 8px}
+.tagline{color:var(--muted);font-size:18px;margin:0 0 20px}
+.cta-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:6px 0 12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 16px;border-radius:14px;border:1px solid var(--border);background:transparent;color:var(--text);text-decoration:none;min-width:180px;transition:transform .06s ease, background .2s ease, border-color .2s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn.primary{background:var(--primary);color:#05121c;border-color:transparent}
+.btn.ghost{border-color:var(--primary);color:var(--primary)}
+.meta{display:flex;gap:8px;justify-content:center;margin-top:10px}
+.chip{padding:6px 10px;border-radius:999px;background:#0f172a;border:1px solid var(--border);color:var(--muted);font-size:12px}
+.features{display:grid;gap:12px;margin:26px 0;grid-template-columns:1fr}
+.feature{padding:18px}
+.feature h3{margin:6px 0 6px}
+.feature p{margin:0;color:var(--muted)}
+@media(min-width:860px){.features{grid-template-columns:repeat(2,1fr)}}
+.footer{display:flex;justify-content:space-between;align-items:center;margin:20px 0 10px;color:var(--muted)}
+.bg{position:fixed;inset:0;pointer-events:none;z-index:-1}
+.orb{position:absolute;filter:blur(60px);opacity:.35;mix-blend-mode:screen}
+.orb1{top:10%;left:10%;width:240px;height:240px;background:radial-gradient(circle at 30% 30%, #0ea5e9, transparent 60%)}
+.orb2{bottom:8%;right:15%;width:300px;height:300px;background:radial-gradient(circle at 30% 30%, #22d3ee, transparent 60%)}
+.orb3{top:40%;right:35%;width:200px;height:200px;background:radial-gradient(circle at 30% 30%, #a78bfa, transparent 60%)}

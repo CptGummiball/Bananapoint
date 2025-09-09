@@ -1,3 +1,5 @@
+![bananapointlogo](/project/public/assets/icon-192.png)
+
 # Bananapoint
 
 Bananapoint ist eine webbasierte Progressive Web App zur Verwaltung von Schichten, Nutzern und Lageraktivitäten.  
